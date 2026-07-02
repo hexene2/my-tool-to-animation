@@ -72,7 +72,7 @@ class Motion:
             draw.rectangle((x1,y1,x1+(width*progress),y1+(height*progress)),outline=color)
             return
         draw.rectangle((x1,y1,x1+(width*progress),y1+(height*progress)),outline=color,fill=fillColor)
-        
+         
         
     def makeCoordinatePlane(self, scale=100, start=0,end=15,centerx=0,centery=0):
         self.object.append([Motion.makeCoordinatePlaneAtSingleFrame, {"scale":scale, "start":start,"end":end,"centerx":centerx,"centery":centery}])
